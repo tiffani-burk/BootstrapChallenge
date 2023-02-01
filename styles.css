@@ -1,37 +1,42 @@
 body {
     padding: 2rem;
+    font-family: 'Roboto', sans-serif;
 }
 
-.right-container {
-    /* background-color: green; */
-    padding: 2rem;
-    width: 40%;
+/* Left Container */
 
-}
-
-.left-container {
-    /* background-color: pink; */
-    padding: 2rem;
+.popup-modal__left-container {
+    padding: 3rem;
     width: 60%;
 }
 
+.popup-modal__signupTitle {
+    font-weight: 600;
+}
 
-.mb-3 i {
+.popup-modal__description {
+    color: rgb(94, 94, 94);
+    font-size: smaller;
+}
+
+.popup-modal__input-container__label {
+    color: rgb(92, 92, 92);
+}
+
+.popup-modal__input-container i {
     position: absolute;
     right: 1.8rem;
-    bottom: 2.7rem;
+    bottom: 3rem;
     color: #383c3f;
 }
 
-.right-container {
-    background-color: rgb(231, 230, 230);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+.popup-modal__input-container input:focus {
+    border: solid rgb(52, 52, 251) 1.5px;
+}
 
+.popup-modal__input-container input {
+    padding-top: .7rem;
+    padding-bottom: .7rem;
 }
 
 .usericon {
@@ -41,26 +46,6 @@ body {
     margin-top: 1.2rem;
     margin-bottom: .5rem;
 }
-
-
-
-.btn-close {
-    float: right;
-    }
-
-
-.name {margin-bottom: 0;}
-
-.title {
-    font-weight: 200;
-}
-
-.right-container__text--blue {
-    color: rgb(7, 7, 124);
-    line-height: 140%;
-    font-weight: 300
-}
-
 
 .kabob-menu__singledot {
     height: .25rem;
@@ -83,4 +68,38 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+/* Right Container */
+
+.popup-modal__right-container {
+    background-color: rgb(231, 230, 230);
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 2rem;
+    width: 40%;
+
+}
+
+.popup-modal__user-title {
+    font-weight: 200;
+    color: grey;
+    font-weight: 300;
+    font-size: smaller;
+}
+
+.popup-modal__text--blue {
+    color: rgb(7, 7, 124);
+    line-height: 140%;
+    font-weight: 300
+}
+
+
+.popup-modal__user-name {
+    font-size: smaller;
+    margin-bottom: 0;
 }

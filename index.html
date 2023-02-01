@@ -48,27 +48,30 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-container d-flex flex-row">
-                    <div class="left-container">
-                        <div class="modal-header d-flex flex-column">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Sign up with us today</h1>
-                            <p class="text-center">Enter your email and choose a password to setup your account
+                    <div class="popup-modal__left-container">
+                        <div class="modal-header border-0 d-flex flex-column">
+                            <h1 class="popup-modal__signupTitle modal-title fs-5" id="exampleModalLabel">Sign up with us today</h1>
+                            <p class="popup-modal__description text-center">Enter your email and choose a password to setup your account
                             </p>
                         </div>
                         <div class="modal-body">
                             <form>
-                                <div class="mb-3">
-                                    <label for="recipient-name" class="col-form-label">Email:</label>
-                                    <input type="text" class="form-control" id="recipient-name" autocomplete="off">
+                                <div class="popup-modal__input-container mb-3">
+                                    <label for="recipient-name"
+                                        class="popup-modal__input-container__label col-form-label">Email</label>
+                                    <input type="text" class="popup-modal__input-container__input form-control"
+                                        id="recipient-name" autocomplete="off">
                                 </div>
-                                <div class="mb-3">
-                                    <label for="message-text" class="col-form-label">Password:</label>
-                                    <input type="password" class="form-control" id="show_hide_password"
-                                        autocomplete="off">
+                                <div class="popup-modal__input-container mb-3">
+                                    <label for="message-text"
+                                        class="popup-modal__input-container__label col-form-label">Password</label>
+                                    <input type="password" class="popup-modal__input-container__input form-control"
+                                        id="show_hide_password" autocomplete="off">
                                     <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
                                 </div>
                             </form>
                         </div>
-                        <div class="modal-footer">
+                        <div class="modal-footer border-0">
                             <button type="button" class="popup-modal__btn btn btn-primary">
                                 <div class="btn__textplacement"> Continue<i class="fa-solid fa-arrow-right"></i> </div>
                             </button>
@@ -81,15 +84,15 @@
                             <span class="kabob-menu__singledot"></span>
                         </div>
                     </div>
-                    <div class="right-container">
-                        <p class="right-container__text--blue text-center">"Stratis UI kit has allowed us to rapidly
+                    <div class="popup-modal__right-container">
+                        <p class="popup-modal__text--blue text-center">"Stratis UI kit has allowed us to rapidly
                             prototype build
                             ready products within minutes. It's really helped us expand out capabilities
                             quickly."</p>
                         <img src="img/girl.jpg" class="img-fluid usericon" alt="Sample image">
                         <div class="title-container">
-                            <h6 class="name"><b>Alison Bothman</b></h6>
-                            <p class="title">Product Designer, Google</p>
+                            <h6 class="popup-modal__user-name"><b>Alison Bothman</b></h6>
+                            <p class="popup-modal__user-title">Product Designer, Google</p>
                         </div>
                     </div>
                 </div>
